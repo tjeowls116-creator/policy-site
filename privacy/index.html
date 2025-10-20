@@ -1,0 +1,19 @@
+<!doctype html><meta charset="utf-8"><title>privacy redirect</title>
+<script>
+(function() {
+  var langs = ['de', 'en', 'es', 'es-rMX', 'hi-rIN', 'id', 'in', 'ja', 'ko', 'pt', 'pt-rBR', 'th', 'und', 'vi', 'zh-rTW'];
+  var nav = (navigator.language || navigator.userLanguage || "").toLowerCase();
+  function pick() {
+    if (!nav) return "ko";
+    if (langs.indexOf(nav) >= 0) return nav;
+    var major = nav.split('-')[0];
+    if (langs.indexOf(major) >= 0) return major;
+    var map = {"pt-br":"pt-rBR","es-mx":"es-rMX","zh-tw":"zh-rTW"};
+    if (map[nav] && langs.indexOf(map[nav]) >= 0) return map[nav];
+    return "ko"; // default to ko now that we added it
+  }
+  var lang = pick();
+  window.location.replace("/policy-site/" + "privacy" + "/" + lang + "/");
+})();
+</script>
+<p>Redirecting…</p>
