@@ -1,0 +1,20 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Redirecting…</title>
+<script>
+// Try redirecting common roots to /privacy/
+(function(){
+  var tried = ["/privacy/","/policy-site/privacy/","privacy/"];
+  var origin = location.origin;
+  for (var i=0;i<tried.length;i++){
+    var url = tried[i];
+    if (url[0] !== "/") url = "/" + url;
+    if (!location.pathname.endsWith(url)) {
+      location.replace(origin + url);
+      break;
+    }
+  }
+})();
+</script>
+<p>If you are not redirected automatically, go to <a href="/privacy/">/privacy/</a>.</p>
