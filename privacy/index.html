@@ -1,19 +1,89 @@
-<!doctype html><meta charset="utf-8"><title>privacy redirect</title>
-<script>
-(function() {
-  var langs = ['de', 'en', 'es', 'es-rMX', 'hi-rIN', 'id', 'in', 'ja', 'ko', 'pt', 'pt-rBR', 'th', 'und', 'vi', 'zh-rTW'];
-  var nav = (navigator.language || navigator.userLanguage || "").toLowerCase();
-  function pick() {
-    if (!nav) return "ko";
-    if (langs.indexOf(nav) >= 0) return nav;
-    var major = nav.split('-')[0];
-    if (langs.indexOf(major) >= 0) return major;
-    var map = {"pt-br":"pt-rBR","es-mx":"es-rMX","zh-tw":"zh-rTW"};
-    if (map[nav] && langs.indexOf(map[nav]) >= 0) return map[nav];
-    return "ko"; // default to ko now that we added it
-  }
-  var lang = pick();
-  window.location.replace("/policy-site/" + "privacy" + "/" + lang + "/");
-})();
-</script>
-<p>Redirecting…</p>
+<!doctype html>
+<html lang="ko"><meta charset="utf-8"><title>개인정보처리방침 | 코인지표알리미</title>
+<style>
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;max-width:900px;margin:40px auto;padding:0 16px;line-height:1.6}
+h1{margin-top:24px} h2{margin-top:28px} code,kbd,pre{font-family:ui-monospace,Consolas,monospace}
+.lang{margin:16px 0;padding:8px 12px;border:1px solid #ddd;border-radius:8px;background:#fafafa}
+small{color:#666}
+</style><body>
+<h1>개인정보처리방침</h1>
+<p><strong>앱:</strong> 코인지표알리미(Coin Indicator Alert)<br>
+<strong>개발자:</strong> 제이더블유에스케이 : 서대진 (SEO DAE JIN)<br>
+<strong>문의:</strong> <a href="mailto:coinallalert@gmail.com">coinallalert@gmail.com</a><br>
+<strong>주소:</strong> 대한민국 전라남도 광양시 광양읍 덕산4길86 102-404<br>
+<strong>시행일:</strong> 2025-11-08</p>
+<h2>1. 적용 범위</h2>
+<p>이 문서는 당사가 수집하는 정보, 이용 목적, 공유, 보안, 보관 기간, 국제 이전, 법적 근거, 이용자 권리, 아동에 대한 정책, 변경 통지, 연락처를 설명합니다.</p>
+<h2>2. 수집하는 정보</h2>
+<ol>
+<li><strong>결제</strong>: Google Play 구매 식별자, 영수증 토큰, 구독 상태.</li>
+<li><strong>사용 및 진단</strong>: 앱 이벤트, 성능 지표, 충돌 로그.</li>
+<li><strong>기기 정보</strong>: 언어/지역, OS 버전, 기기 모델, 익명 식별자.</li>
+<li><strong>피드백</strong>: 고객센터/이메일 문의 내용과 연락 정보.</li>
+<li><strong>푸시</strong>: 알림 전송을 위한 FCM 토큰.</li>
+</ol>
+<p><strong>당사는 거래소 API 키를 수집하거나 저장하지 않으며, 앱이 사용자 대신 거래를 실행하지 않습니다.</strong></p>
+<h2>3. 이용 목적</h2>
+<p>서비스 제공·유지·개선, 개인화, 결제 처리, 부정행위 탐지, 법령 준수.</p>
+<h2>4. 공유</h2>
+<p>분석·충돌 리포팅·결제 처리 등 서비스 제공을 위한 위탁사와만 공유하며, 법에서 요구하는 경우를 제외하고 개인정보를 판매하지 않습니다.</p>
+<h2>5. 보안</h2>
+<p>전송 구간 HTTPS 등 합리적인 기술적·관리적 보호조치를 적용합니다.</p>
+<h2>6. 보관 기간</h2>
+<p>목적 달성 또는 법령 준수에 필요한 기간까지만 보관 후 삭제 또는 익명화합니다.</p>
+<h2>7. 국제 이전</h2>
+<p>국경 간 이전 시 표준계약조항 등 적절한 보호조치를 적용합니다.</p>
+<h2>8. 법적 근거(GDPR)</h2>
+<p>계약 이행, 정당한 이익(분석·서비스 개선·보안), 동의(필요 시), 법적 의무.</p>
+<h2>9. 이용자 권리</h2>
+<p>거주지 법령에 따라 열람·정정·삭제·이동·처리 제한·처리에 대한 이의를 제기할 권리를 행사할 수 있습니다. 아래 연락처로 요청해 주세요.</p>
+<h2>10. 캘리포니아(CCPA/CPRA)</h2>
+<p>알 권리, 접근·삭제·정정, 판매/공유 거부권, 차별 금지. 당사는 개인 정보를 판매하지 않으며 크로스 컨텍스트 행동 광고를 하지 않습니다.</p>
+<h2>11. 아동</h2>
+<p>법령상 요구 연령 미만의 아동을 대상으로 서비스를 제공하지 않으며, 고의로 데이터를 수집하지 않습니다.</p>
+<h2>12. 변경</h2>
+<p>중대한 변경 시 앱 내 또는 본 페이지 공지로 안내합니다.</p>
+<h2>13. 연락처</h2>
+<p>개인정보 문의 또는 권리 요청: <a href="mailto:coinallalert@gmail.com">coinallalert@gmail.com</a><br>우편: 대한민국 전라남도 광양시 광양읍 덕산4길86 102-404</p>
+<p class="lang"><small>English version is below.</small></p>
+<hr>
+<h1>Privacy Policy (en)</h1>
+<p><strong>App:</strong> Coin Indicator Alert<br>
+<strong>Developer:</strong> JWSK : Seo Dae Jin (SEO DAE JIN)<br>
+<strong>Contact:</strong> <a href="mailto:coinallalert@gmail.com">coinallalert@gmail.com</a><br>
+<strong>Address:</strong> 대한민국 전라남도 광양시 광양읍 덕산4길86 102-404<br>
+<strong>Effective date:</strong> 2025-11-08</p>
+<h2>1. Scope</h2>
+<p>This Policy describes what data we collect, how we use it, how we share it, and your choices.</p>
+<h2>2. Data We Collect</h2>
+<ol>
+<li><strong>Purchases</strong>: Google Play purchase identifiers, receipt tokens, subscription status.</li>
+<li><strong>Usage &amp; Diagnostics</strong>: app events, performance metrics, crash logs.</li>
+<li><strong>Device</strong>: language/locale, OS version, device model, anonymized identifiers.</li>
+<li><strong>Feedback</strong>: messages you send to support and your contact details.</li>
+<li><strong>Push</strong>: FCM token for delivering notifications.</li>
+</ol>
+<p><strong>We do not collect or store exchange API keys, and the app does not execute trades on your behalf.</strong></p>
+<h2>3. Purposes</h2>
+<p>Provide, maintain, and improve the Service; personalize features; process payments; detect abuse; comply with law.</p>
+<h2>4. Sharing</h2>
+<p>With processors/service providers (analytics, crash reporting, payments/app‑store) and where required by law. We do not sell personal information.</p>
+<h2>5. Security</h2>
+<p>We use reasonable technical and organizational measures, including HTTPS in transit.</p>
+<h2>6. Retention</h2>
+<p>We keep data only as long as necessary for the purposes above or as required by law, then delete or anonymize it.</p>
+<h2>7. International Transfers</h2>
+<p>We use appropriate safeguards such as standard contractual clauses.</p>
+<h2>8. Legal Bases (GDPR)</h2>
+<p>Contract; legitimate interests (analytics, service improvement, security); consent; legal obligations.</p>
+<h2>9. Your Rights</h2>
+<p>Subject to local law, you may request access, rectification, erasure, restriction, portability, and object to processing.</p>
+<h2>10. California (CCPA/CPRA)</h2>
+<p>Rights to know, access, delete, correct, opt out of sale or sharing, and non‑discrimination. We do not sell personal information or use it for cross‑context behavioral advertising.</p>
+<h2>11. Children</h2>
+<p>We do not knowingly collect data from children under the age required by local law.</p>
+<h2>12. Changes</h2>
+<p>We may update this Policy. Material changes will be notified in‑app or via this page.</p>
+<h2>13. Contact</h2>
+<p>Privacy inquiries or rights requests: <a href="mailto:coinallalert@gmail.com">coinallalert@gmail.com</a><br>Postal address: 대한민국 전라남도 광양시 광양읍 덕산4길86 102-404</p>
+</body></html>
